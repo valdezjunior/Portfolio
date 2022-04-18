@@ -1,5 +1,6 @@
 # portifolio
- Desenvolvendo um portifolio
+
+ Portfólio do desenvolvedor
 
  ## Tarefas
 
@@ -7,7 +8,7 @@
 
  ## Ícones
 
- :package: Nova funcionalidade
- :up: Atualização
- :beatle: Correção de bug
- :checke_flag: Release
+- :package: nova funcionalidade
+- :up: atualização
+- :beetle: correção de bug
+- :checkered_flag: release
