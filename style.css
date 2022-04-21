@@ -611,12 +611,16 @@ header {
     padding: 0.3rem;
 }
 
+#preco {
+    margin-top: 2.5rem;
+}
+
 .btn-orcamento {
     text-transform: uppercase;
     padding: 1rem;
     cursor: pointer;
     grid-column: 2;
-    margin-top: 2.1rem;
+    margin-top: 2rem;
 }
 
 footer {
