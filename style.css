@@ -89,7 +89,7 @@ html {
     opacity: 1;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     .hamburguer {
         /*background-color: red;*/
         width: 1.7rem;
@@ -208,7 +208,7 @@ header {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     .banner {
         position: absolute;
         left: 10%;
@@ -270,7 +270,7 @@ header {
     color: #6a3093;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     .sidebar {
         width: 15rem;
     }
@@ -312,7 +312,7 @@ header {
     background-color: #ce46f0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     .social-media i {
         width: 2rem;
         height: 2rem;
@@ -443,9 +443,13 @@ header {
         margin-top: 1rem;
     }
 
+    .conhecimentos-img-wrapper {
+        margin-left: 25%;
+        margin-top: -15%;
+    }
+
     .conhecimentos-img-wrapper img {
         max-width: 50%;
-        margin-left: 25%;
     }
 
 }
@@ -548,7 +552,7 @@ header {
 .card-info {
     position: absolute;
     bottom: 0;
-    padding: 1.8rem;
+    padding: 1.6rem;
     text-shadow: .2rem .3rem .3rem rgba(0, 0, 0, 0.4);
     opacity: 0;
     visibility: hidden;
@@ -626,7 +630,7 @@ header {
     .card-info {
         width: 60%;
         height: 85%;
-        margin-left: 1.5rem;     
+        margin-left: .7rem;     
     }
 
     .card-info h2 {
@@ -662,6 +666,13 @@ header {
         border-radius: .5rem;
         opacity: .8;
         transition: opacity .5s;
+    }
+}
+
+
+@media (max-width: 930px) {
+    .card {
+        margin: 0.1rem;
     }
 }
 
@@ -795,7 +806,19 @@ header {
 
     .input-group textarea {
         min-width: 20rem;
-        max-width: 23rem;
+        max-width: 22rem;
+    }
+}
+
+@media (max-width: 930px) {
+
+    .input-group input {
+        width: 22rem;
+    }
+
+    .input-group textarea {
+        min-width: 22rem;
+        max-width: 24rem;
     }
 }
 
@@ -883,7 +906,7 @@ header {
 
 @media (max-width: 800px) {
     .sessao-orcamento h1 {
-        font-size: 2rem;
+        font-size: 1.9rem;
         padding: 0.5rem 3rem;
     }
 
@@ -905,6 +928,19 @@ header {
     }
     
 }    
+
+@media (max-width: 1000px) {
+    .sessao-orcamento h1 {
+        font-size: 2rem;
+        padding: 0.8rem 3.5rem;
+    }
+
+    .orcamento-wrapper {
+        width: 90%;
+        height: 77%;
+    }
+
+}
 
 
 /*=================== FOOTER ===================*/
@@ -975,5 +1011,12 @@ footer {
         width: 3rem;
         height: 3rem;
         
+    }
+}
+
+@media (max-width: 1270px) {
+    .footer-content {
+        width: 80%;
+        display: flex;
     }
 }
