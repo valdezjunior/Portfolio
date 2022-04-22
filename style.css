@@ -455,7 +455,7 @@ header {
 }
 
 
-@media (max-width: 1130px) {
+@media screen and (min-width: 800px) and (max-width: 1130px){
     
     .conhecimento:nth-child(1) {
         grid-column: 4 / 8;
@@ -670,7 +670,7 @@ header {
 }
 
 
-@media (max-width: 930px) {
+@media screen and (min-width: 800px) and (max-width: 930px){
     .card {
         margin: 0.1rem;
     }
@@ -689,7 +689,7 @@ header {
 }
 
 .contato-wrapper {
-    width: 60%;
+    width: 70%;
     height: 36rem;
     display: flex;
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
@@ -751,7 +751,7 @@ header {
 .input-group textarea {
     padding-top: 1rem;
     min-width: 25rem;
-    max-width: 26rem;
+    max-width: 20rem;
     max-height: 6.5rem;
     font-style: italic;
     font-size: 1.2rem;
@@ -795,30 +795,44 @@ header {
 }
 
 
-@media (max-width: 800px) {
+
+
+@media (max-width: 750px) {
     .contato-wrapper {
         width: 90%;
     }
 
     .input-group input {
-        width: 20rem;
+        width: 13rem;
     }
 
     .input-group textarea {
-        min-width: 20rem;
-        max-width: 22rem;
+        min-width: 12rem;
+        max-width: 13rem;
+    }
+
+    .contato-left {
+        width: 40%;
+    }
+
+    .contato-right {
+        width: 60%;
     }
 }
 
-@media (max-width: 930px) {
+@media screen and (min-width: 750px) and (max-width: 1150px) {
+
+    .contato-wrapper {
+        width: 89%;
+    }
 
     .input-group input {
-        width: 22rem;
+        width: 25rem;
     }
 
     .input-group textarea {
-        min-width: 22rem;
-        max-width: 24rem;
+        min-width: 25rem;
+        max-width: 28rem;
     }
 }
 
@@ -904,19 +918,24 @@ header {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
     .sessao-orcamento h1 {
-        font-size: 1.9rem;
-        padding: 0.5rem 3rem;
+        font-size: 1.4rem;
+        padding: 0.3rem 2.8rem;
+    }
+
+    .sessao-orcamento form {
+        margin: 3rem 1rem;
+        row-gap: 2rem;
     }
 
     .orcamento-wrapper {
-        width: 90%;
-        height: 77%;
+        width: 85%;
+        height: 60%;
     }
 
     .sessao-orcamento label {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     #preco {
@@ -929,7 +948,7 @@ header {
     
 }    
 
-@media (max-width: 1000px) {
+@media screen and (min-width: 750px) and (max-width: 1000px) {
     .sessao-orcamento h1 {
         font-size: 2rem;
         padding: 0.8rem 3.5rem;
@@ -937,7 +956,7 @@ header {
 
     .orcamento-wrapper {
         width: 90%;
-        height: 77%;
+        height: 80%;
     }
 
 }
@@ -1002,7 +1021,12 @@ footer {
     }
     
     .footer-content p {
-        font-size: 1rem; 
+        font-size: .7rem; 
+    }
+
+    .social-list a {
+        font-size: 1rem;
+        margin: 0 1rem;
     }
 
     #link-topo {
@@ -1014,7 +1038,7 @@ footer {
     }
 }
 
-@media (max-width: 1270px) {
+@media screen and (min-width: 800px) and (max-width: 1270px){
     .footer-content {
         width: 80%;
         display: flex;
