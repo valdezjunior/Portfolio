@@ -21,6 +21,8 @@ html {
     scroll-behavior: smooth;
 }
 
+/*=================== HAMBURGUER ===================*/
+
 .hamburguer {
     /*background-color: red;*/
     width: 2rem;
@@ -56,7 +58,7 @@ html {
 }
 .show-menu #line3 {
     width: 80%;
-    transform: rotate(-45deg) translate(.2rem, -.43rem);; /* Sentido anti-horário // Translate pra mudar a posição*/
+    transform: rotate(-45deg) translate(.2rem, -.43rem); /* Sentido anti-horário // Translate pra mudar a posição*/
 }
 
 .hamburguer span {
@@ -86,6 +88,26 @@ html {
 .show-menu .hamburguer:hover span {
     opacity: 1;
 }
+
+@media (max-width: 800px) {
+    .hamburguer {
+        /*background-color: red;*/
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .show-menu #line1 {
+        width: 80%;
+        transform: rotate(45deg) translate(.2rem, .2rem); 
+    }
+
+    .show-menu .hamburguer {
+        right: 11rem;
+    }
+}
+
+/*=================== HEADER ===================*/
+
 
 header {
     width: 100%;
@@ -185,6 +207,30 @@ header {
     }
 }
 
+
+@media (max-width: 800px) {
+    .banner {
+        position: absolute;
+        left: 10%;
+        right: 5%;
+    }
+
+    .banner h1 {
+        font-size: 3.2rem;
+    }
+
+    .banner p {
+        font-size: 1.7rem;
+    }
+
+    .banner button {
+        font-size: 0.9rem;
+        padding: 1rem 2.5rem;
+    }
+}
+
+/*=================== SIDEBAR ===================*/
+
 .sidebar {
     width: 20rem;
     height: 100vh;
@@ -224,6 +270,23 @@ header {
     color: #6a3093;
 }
 
+@media (max-width: 800px) {
+    .sidebar {
+        width: 15rem;
+    }
+
+    .menu-item {
+        margin-bottom: .8rem;
+    }
+
+    .menu-link {
+        font-size: 1.7rem;
+    }
+}
+
+/*=================== SOCIAL-MEDIA ===================*/
+
+
 .social-media {
     position: absolute;
     bottom: 2rem;
@@ -249,6 +312,13 @@ header {
     background-color: #ce46f0;
 }
 
+@media (max-width: 800px) {
+    .social-media i {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.4rem;
+    }
+}
 
 /*=================== CONHECIMENTOS ===================*/
 
@@ -257,7 +327,7 @@ header {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(6, 5rem);
-    row-gap: .5rem;
+    row-gap: 2rem;
 }
 
 .conhecimento:nth-child(1) {
@@ -343,7 +413,7 @@ header {
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 800px){
 
     .sessao-header h1{
         font-size: 2.8rem;
@@ -376,6 +446,63 @@ header {
     .conhecimentos-img-wrapper img {
         max-width: 50%;
         margin-left: 25%;
+    }
+
+}
+
+
+@media (max-width: 1130px) {
+    
+    .conhecimento:nth-child(1) {
+        grid-column: 4 / 8;
+        grid-row: 1 / 2;
+    }
+    
+    .conhecimento:nth-child(2) {
+        grid-column: 3 / 7;
+        grid-row: 3 / 4;
+    }
+    
+    .conhecimento:nth-child(3) {
+        grid-column: 4 / 8;
+        grid-row: 5 / 6;
+    }
+    
+    .conhecimento:nth-child(4) {
+        grid-column: 11 / 15;
+        grid-row: 1 / 2;
+    }
+    
+    .conhecimento:nth-child(5) {
+        grid-column: 12 / 16;
+        grid-row: 3 / 4;
+    }
+    
+    .conhecimento:nth-child(6) {
+        grid-column: 11 / 15;
+        grid-row: 5 / 6;
+
+    }
+
+    .conhecimentos {
+        row-gap: 2.7rem;
+    }
+
+    .sessao-header h1 {
+        font-size: 2.8rem;
+    }
+
+    .conhecimento-header i {
+        font-size: 2.2rem;
+    }
+
+    .conhecimento-header h3 {
+        font-size: 1.7rem;
+    }
+
+    .conhecimentos-img-wrapper img {
+        margin-left: 10%;
+        margin-top: 15%;
     }
 
 }
@@ -481,7 +608,7 @@ header {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .projetos {
         display: flex;
         flex-wrap: wrap;
@@ -657,7 +784,7 @@ header {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .contato-wrapper {
         width: 90%;
     }
@@ -748,8 +875,13 @@ header {
     margin-top: 2rem;
 }
 
+.btn-orcamento:hover {
+    color: rgba(218, 154, 146, 0.89);
+    transition: all 0.5s;
+}
 
-@media (max-width: 700px) {
+
+@media (max-width: 800px) {
     .sessao-orcamento h1 {
         font-size: 2rem;
         padding: 0.5rem 3rem;
@@ -826,7 +958,7 @@ footer {
     box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
     .footer-content {
         width: 90%;
