@@ -919,7 +919,7 @@ header {
 
 @media (max-width: 750px) {
     .sessao-orcamento h1 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: 0.3rem 2.8rem;
     }
 
@@ -930,7 +930,7 @@ header {
 
     .orcamento-wrapper {
         width: 85%;
-        height: 70%;
+        height: 80%;
     }
 
     .sessao-orcamento label {
