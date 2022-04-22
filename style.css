@@ -919,18 +919,18 @@ header {
 
 @media (max-width: 750px) {
     .sessao-orcamento h1 {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         padding: 0.3rem 2.8rem;
     }
 
     .sessao-orcamento form {
-        margin: 3rem 1rem;
+        margin: 1rem 1rem;
         row-gap: 2rem;
     }
 
     .orcamento-wrapper {
         width: 85%;
-        height: 60%;
+        height: 70%;
     }
 
     .sessao-orcamento label {
