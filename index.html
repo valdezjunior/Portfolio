@@ -145,6 +145,7 @@
                         <button class="btn">Saiba Mais</button>
                     </div>
                 </div>
+                
                 <div class="card">    
                     <div class="card-img-wrapper">
                         <img src="img/proj2.jpg" alt="imagem do projeto Maratona">
@@ -178,19 +179,23 @@
                 <div class="contato-left"></div>
                 <div class="contato-right">
                     <h1>Contato</h1>
-                    <form>
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="f042d788-8347-4ec4-9f2b-a955d5ab4090">
+                        <input type="hidden" name="redirectTo" value="https://valdezjunior.github.io/Portfolio/">
+
+
                         <div class="input-group">
-                            <input type="text" class="field" id="nome" placeholder="Digite...">
+                            <input type="text" class="field" id="nome" name="name" placeholder="Digite...">
                             <label for="nome" class="field-label">Nome</label>
                         </div>
                         
                         <div class="input-group">
-                            <input type="text" class="field" id="email" placeholder="Digite...">
+                            <input type="text" class="field" id="email" name="email" placeholder="Digite...">
                             <label for="email" class="field-label">E-mail</label>
                         </div>
 
                         <div class="input-group">
-                           <textarea class="field" id="mensagem" placeholder="Digite..."></textarea>
+                           <textarea class="field" id="mensagem" name="message" placeholder="Digite..."></textarea>
                             <label for="mensagem" class="field-label">Mensagem</label>
                         </div>
 
